@@ -44,6 +44,8 @@ main {
     color: #fff;
     text-align: center;
     padding: 200px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .title h1 {
     font-size: 48px;
@@ -87,7 +89,7 @@ main {
 .skill-1 ol {
     list-style-position: inside;
     text-align: justify;
-    margin: 0 43%;
+    margin: 0 40%;
 }
 .skill-1 ol li {
     font-size: 18px;
@@ -106,7 +108,7 @@ main {
 .skill-2 ul {
     list-style-position: inside;
     text-align: justify;
-    margin: 0 40%;
+    margin: 0 36%;
 }
 .skill-2 ul li {
     font-size: 18px;
@@ -183,4 +185,43 @@ footer h1 {
     font-size: 16px;
     padding: 6px;
     color: #fff;
+}
+
+/* responsive website */
+
+@media(max-width: 1000px) {
+    .skill-1 ol {
+        margin: 0 36%;
+    }
+    .skill-2 ul {
+        margin: 0 30%;
+    }
+    .contact .form {
+        margin: 0 24%;
+    }
+}
+
+@media(max-width: 670px) {
+    header h1 {
+        display: none;
+    }
+    header ul {
+        text-align: center;
+        padding: 5px;
+    }
+    .skills {
+        display: block;
+    }
+    .skill-1 {
+        margin-bottom: 24px;
+    }
+    .skill-1 ol {
+        margin: 0 20%;
+    }
+    .skill-2 ul {
+        margin: 0 20%;
+    }
+    .contact .form {
+        margin: 0 16%;
+    }
 }
