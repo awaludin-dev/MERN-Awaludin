@@ -65,7 +65,8 @@ main {
 }
 .skills {
     margin: 32px;
-    margin-top: 20px;
+    padding-top: 36px;
+    margin-top: -20px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
