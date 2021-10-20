@@ -58,14 +58,13 @@ main {
     margin-bottom: 18px;
     font-size: 36px;
     font-weight: bolder;
-    text-transform: uppercase;
 }
 .biografi p {
     text-align: justify;
     font-size: 18px;
 }
 .skills {
-    margin: 36px;
+    margin: 32px;
     margin-top: 20px;
     display: grid;
     grid-template-rows: 1fr;
@@ -110,6 +109,25 @@ main {
 }
 .skill-2 ul li {
     font-size: 18px;
+}
+.friends {
+    margin: 20px;
+    text-align: center;
+}
+.friends h3 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+.friends table {
+    margin: 0 auto;
+    background-color: rgb(196, 196, 196);
+}
+.friends .nama {
+    text-align: left;
+}
+.friends table th, .friends table td {
+    padding: 2px 4px;
 }
 .contact {
     text-align: center;
