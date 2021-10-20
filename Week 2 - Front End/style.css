@@ -34,12 +34,15 @@ header ul li a {
 }
 main {
     margin-top: 33px;
+    margin-bottom: 48px;
 }
 .title {
     background-color: aqua;
     color: #fff;
     text-align: center;
     padding: 160px;
+}
+.title h1 {
     font-size: 36px;
     font-weight: bolder;
 }
