@@ -20,8 +20,8 @@ header h1 a {
 header ul {
     text-align: right;
     list-style-type: none;
-    padding-top: 3px;
-    padding-right: 10px;
+    padding: 3px 10px;
+    margin-bottom: 0;
 }
 header ul li {
     background-color: rgb(138, 189, 247);
@@ -50,11 +50,12 @@ main {
 .title h1 {
     font-size: 48px;
     font-weight: bolder;
-    text-transform: uppercase;
 }
 .biografi {
     text-align: center;
+    margin-top: -26px;
     padding: 50px;
+    padding-bottom: 0;
 }
 .biografi h3 {
     margin-bottom: 18px;
@@ -67,7 +68,7 @@ main {
 }
 .skills {
     margin: 32px;
-    padding-top: 36px;
+    padding-top: 44px;
     margin-top: -20px;
     display: grid;
     grid-template-rows: 1fr;
@@ -184,6 +185,7 @@ footer h1 {
     text-align: center;
     font-size: 16px;
     padding: 6px;
+    margin-bottom: 0;
     color: #fff;
 }
 
