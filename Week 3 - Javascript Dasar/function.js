@@ -50,6 +50,13 @@ for (let i = 1; i <=5; i++) {
         }
     }
     showResult(poinPlayer1, poinPlayer2, acak);
+    if (i==5) break;
+    let konfirmasi = confirm(`Ronde ${i+1}?`);
+    if (konfirmasi == false) {
+        break;
+    } else {
+        continue;
+    }
 }
 
 // Arrow function
