@@ -2,6 +2,14 @@
 function randomNumber() {
     return Math.floor((Math.random() * 3) + 1);
 }
+
+const showResult = function (p1, p2, random) {
+    alert(`Nilai yang dicari ${random}
+    ------------------
+    Player 1 = ${p1}
+    Player 2 = ${p2}`);
+}
+
 alert(`Selamat datang di game tebak angka
 kamu diminta untuk menebak angka 1 - 3
 dan kamu akan bermain dalam 5 ronde
@@ -11,6 +19,8 @@ SELAMAT BERMAIN!!!!`);
 let poinPlayer1 = 0, poinPlayer2 = 0;
 
 for (let i = 1; i <=5; i++) {
+    // Membuat angka random 1 - 3
+    let acak = randomNumber();
     // Membuat input untuk player 1 dan 2
     let player1 = prompt(`Ronde ${i}\nPlayer 1 -> Masukkan angka 1 - 3`);
     let player2 = prompt(`Ronde ${i}\nPlayer 2 -> Masukkan angka 1 - 3`);
@@ -27,7 +37,6 @@ for (let i = 1; i <=5; i++) {
         i--;
         continue;
     } else {
-        let acak = randomNumber();
         if (player1 == acak) {
             alert(`Player 1 Win`);
             poinPlayer1++;
@@ -38,6 +47,7 @@ for (let i = 1; i <=5; i++) {
             alert(`Hasil seri, karena keduanya salah`);
         }
     }
+    showResult(poinPlayer1, poinPlayer2, acak);
 }
 
 const juara = (p1, p2) => {
