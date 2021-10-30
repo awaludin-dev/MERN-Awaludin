@@ -1,8 +1,10 @@
 // Membuat angka acak dari 1 - 3
+// Function declaration
 function randomNumber() {
     return Math.floor((Math.random() * 3) + 1);
 }
 
+// Function expression
 const showResult = function (p1, p2, random) {
     alert(`Nilai yang dicari ${random}
     ------------------
@@ -50,6 +52,7 @@ for (let i = 1; i <=5; i++) {
     showResult(poinPlayer1, poinPlayer2, acak);
 }
 
+// Arrow function
 const juara = (p1, p2) => {
     if (p1 > p2) {
         alert(`Good Job Player 1`);
