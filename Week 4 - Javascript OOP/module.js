@@ -15,7 +15,7 @@ class Table {
     }
 
     body(data) {
-        let open = `<tbody>`;
+        let open = `<tbody style='cursor:pointer'>`;
         let close = `</tbody>`;
 
         data.forEach(subData => {
@@ -32,7 +32,7 @@ class Table {
 
     input(element) {
         let table = 
-            "<table class='table table-hover table-bordered' style='cursor:pointer'>" +
+            "<table class='table table-hover table-bordered'>" +
             this.head(this.init.head) +
             this.body(this.init.body) +
             "</table>";
@@ -40,15 +40,4 @@ class Table {
     }
 }
 
-let i = 1;
-
-const table = new Table({
-    head: ['No', 'Name', 'Email'],
-    body: [
-        [i++, 'Awaludin Nasir Ubadah', 'ubedsf@gmail.com'],
-        [i++, 'Angelina Maratus Sholihah', 'angelms@gmail.com']
-    ]
-});
-
-const app = document.getElementById("app");
-table.input(app);
+export default Table;
