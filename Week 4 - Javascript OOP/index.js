@@ -5,8 +5,8 @@ let i = 1;
 const table = new Table({
     head: ['No', 'Name', 'Email'],
     body: [
-        [i++, 'Awaludin Nasir Ubadah', 'ubedsf@gmail.com'],
-        [i++, 'Angelina Maratus Sholihah', 'angelms@gmail.com']
+        ['Awaludin Nasir Ubadah', 'ubedsf@gmail.com'],
+        ['Angelina Maratus Sholihah', 'angelms@gmail.com']
     ]
 });
 

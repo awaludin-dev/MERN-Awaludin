@@ -3,38 +3,35 @@ class Table {
         this.init = init;
     }
 
-    head(data) {
-        let open = `<thead><tr>`;
-        let close = `</thead></tr>`;
-
+    createHeader(data) {
+        let recordHeader = ``;
         data.forEach(subData => {
-            open += `<th scope="col" class="table-info">${subData}</th>`;
+            recordHeader += `<th scope="col" class="table-info">${subData}</th>`;
         });
 
-        return open + close;
+        return `<thead><tr>${recordHeader}</tr></thead>`;
     }
 
-    body(data) {
-        let open = `<tbody style='cursor:pointer'>`;
-        let close = `</tbody>`;
-
+    createBody(data) {
+        let recordBody = ``;
+        let index = 1;
         data.forEach(subData => {
-            open += `
+            recordBody += `
             <tr>
-                <th scope="row">${subData[0]}</th>
+                <th scope="row">${index++}</th>
+                <td>${subData[0]}</td>
                 <td>${subData[1]}</td>
-                <td>${subData[2]}</td>
             </tr>`;
         });
 
-        return open + close;
+        return `<tbody style='cursor:pointer'>${recordBody}</tbody>`;
     }
 
     input(element) {
         let table = 
             "<table class='table table-hover table-bordered'>" +
-            this.head(this.init.head) +
-            this.body(this.init.body) +
+            this.createHeader(this.init.head) +
+            this.createBody(this.init.body) +
             "</table>";
         element.innerHTML = table;
     }
