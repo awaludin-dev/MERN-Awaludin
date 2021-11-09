@@ -4,19 +4,19 @@ class Table {
     }
 
     createHeader(data) {
-        let recordHeader = ``;
+        let dataHead = ``;
         data.forEach(subData => {
-            recordHeader += `<th scope="col" class="table-info">${subData}</th>`;
+            dataHead += `<th scope="col" class="table-info">${subData}</th>`;
         });
 
-        return `<thead><tr>${recordHeader}</tr></thead>`;
+        return "<thead><tr>" + dataHead + "</tr></thead>";
     }
 
     createBody(data) {
-        let recordBody = ``;
+        let dataBody = ``;
         let index = 1;
         data.forEach(subData => {
-            recordBody += `
+            dataBody += `
             <tr>
                 <th scope="row">${index++}</th>
                 <td>${subData[0]}</td>
@@ -24,10 +24,10 @@ class Table {
             </tr>`;
         });
 
-        return `<tbody style='cursor:pointer'>${recordBody}</tbody>`;
+        return "<tbody style='cursor:pointer'>" + dataBody + "</tbody>";
     }
 
-    input(element) {
+    render(element) {
         let table = 
             "<table class='table table-hover table-bordered'>" +
             this.createHeader(this.init.head) +

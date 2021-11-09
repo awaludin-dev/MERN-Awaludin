@@ -11,4 +11,4 @@ const table = new Table({
 });
 
 const app = document.getElementById("app");
-table.input(app);
+table.render(app);
