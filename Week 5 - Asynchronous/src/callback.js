@@ -12,25 +12,25 @@ function getTable() {
       console.log(err)
   }) */
   /* AJAX with XML HTTP Request */
-  /* const xhr = new XMLHttpRequest();
-   xhr.open('GET', BASE_URL);
-   xhr.onload = function handleSuccess() {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', BASE_URL);
+  xhr.onload = function handleSuccess() {
     let data = JSON.parse(this.responseText);
     showTable(data);
-   };
+  };
    xhr.onerror = function handleError() {
        console.log('Ups, Failed to load data :(')
    };
-   xhr.send(); */
+   xhr.send();
   /* AJAX with Fetch API */
-  fetch(BASE_URL)
+  /* fetch(BASE_URL)
    .then(function (response) {
      return response.json()
    })
    .catch(function (err) {
      console.log(`Ups, ${err} :(`)
    })
-   .then(showTable)
+   .then(showTable) */
 }
 
 function showTable(data) {
