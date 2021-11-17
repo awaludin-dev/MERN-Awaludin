@@ -1,6 +1,6 @@
-const URL = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=e5b1b0d022844e988015ea9882680168';
+const URL = 'https://newsapi.org/v2/top-headlines?country=id&apiKey=a7912003a9a04585b9b4ccd2646523bb';
 const searchURL = 'https://newsapi.org/v2/everything?q=';
-const API_KEY = '&apiKey=e5b1b0d022844e988015ea9882680168';
+const API_KEY = '&apiKey=a7912003a9a04585b9b4ccd2646523bb';
 let news = document.getElementById('news');
 let search = document.getElementById('search');
 const progressBar = `<div class="progress"><div class="indeterminate"></div></div>`;
