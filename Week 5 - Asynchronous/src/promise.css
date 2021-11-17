@@ -20,7 +20,7 @@ main input {
     padding: 10px;
     border-radius: 16px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 #news {
     display: flex;
@@ -31,9 +31,12 @@ article {
     margin: 12px;
     width: 340px;
     border: 1px solid #000;
+    border-radius: 16px;
 }
 article img {
     width: 340px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 article h3 {
     margin: 0 16px;
@@ -48,6 +51,9 @@ article button {
     cursor: pointer;
     color: #fff;
     border-radius: 6px;
+}
+article button:hover {
+    background-color: rgb(112, 96, 255);
 }
 article .description {
     margin: 5px 16px;

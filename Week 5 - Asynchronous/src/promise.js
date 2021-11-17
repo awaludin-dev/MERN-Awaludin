@@ -35,8 +35,7 @@ function searchNews(newsName) {
             return response.json();
         })
         .catch(function(err){
-            console.log(err);
-            getNews()
+            console.log(err)
         })
         .then(showNews)
 }
