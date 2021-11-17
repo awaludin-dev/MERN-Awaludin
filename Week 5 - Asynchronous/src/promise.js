@@ -42,9 +42,7 @@ function searchNews(newsName) {
 
 function showNews(data) {
     let newsData = '';
-    if(data.status === "error"){
-        getTeam();
-    }else if(data.articles !== null) {
+    if(data.articles !== null) {
         data.articles.forEach((item) => {
             newsData+=
             `<article>
