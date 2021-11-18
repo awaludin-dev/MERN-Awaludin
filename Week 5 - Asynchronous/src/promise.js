@@ -42,7 +42,9 @@ function searchNews(newsName) {
 
 function showNews(data) {
     let newsData = '';
-    if(data.articles !== null) {
+    if(data.articles == "") {
+        news.innerHTML = "<h3>Artikel tidak ditemukan</h3>";
+    } else {
         data.articles.forEach((item) => {
             newsData+=
             `<article>
@@ -53,7 +55,5 @@ function showNews(data) {
             </article>`
         });
         news.innerHTML = newsData;
-    } else {
-        news.innerHTML = "Artikel tidak ditemukan";
     }
 }
